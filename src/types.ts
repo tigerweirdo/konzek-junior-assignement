@@ -22,9 +22,7 @@ export interface Language {
     continent: Continent;
     languages: Language[];
     currency: string;
-    phone: string;
     emoji: string;
-    states: State[];
   }
   
   // Define props for the CountriesList component

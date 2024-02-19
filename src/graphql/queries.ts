@@ -12,10 +12,6 @@ export const GET_COUNTRIES = gql`
         name
       }
     currency
-    phone
-    states {
-      name
-    }
     emoji
   }
   }

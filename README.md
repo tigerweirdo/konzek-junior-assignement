@@ -1,46 +1,74 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Title: Country Explorer SPA
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+Country Explorer is a single-page application (SPA) that allows users to query, filter, and view detailed information about countries using the public GraphQL Countries API. The application features a dynamic list of countries, searchable and groupable by various criteria, with a focus on user interaction and data visualization.
 
-### `npm start`
+### Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **GraphQL API Integration**: Fetches data from the GraphQL Countries API.
+- **Dynamic Search, Filtering, and Grouping**: Users can dynamically search for countries by name and group the results by continent, language, or other attributes. The application supports complex queries for advanced search and grouping functionalities.
+- **Interactive List**: Provides an interactive list where countries can be selected and deselected. Selections are highlighted with a distinct border color, and only one country can be selected at a time.
+- **Automatic Selection**: Automatically selects the 10th item (or the last one if fewer than 10 items are available) in the list upon loading or filtering.
+- **Customizable UI**: Utilizes Ant Design components for a polished user interface, with visual feedback for loading states, errors, and item selections.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (version 14 or later)
+- npm (version 6 or later) or yarn
 
-### `npm run build`
+### Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/country-explorer-spa.git
+   cd country-explorer-spa
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+   or if you use yarn:
+   ```sh
+   yarn install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Start the development server:
+   ```sh
+   npm start
+   ```
+   or with yarn:
+   ```sh
+   yarn start
+   ```
 
-### `npm run eject`
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Deployment
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The application is deployed at [Vercel](https://konzek-junior-assignement.vercel.app/). Visit the link to see the live version of the Country Explorer SPA.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Usage
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **Viewing Countries**: The main page displays a list of countries fetched from the GraphQL API.
+- **Advanced Search and Grouping**: Use the application's search and grouping functionalities to filter countries based on textual matches and group them by attributes such as continent or language. For example, to search for countries that contain "sweden" and group them by their continent, use the application's interactive interface.
+- **Selecting a Country**: Click on a country from the list to select it. The background color of the selected country's card will change to indicate it's the active selection. The application supports single selection, meaning only one country can be selected at a time.
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+We welcome contributions to the Country Explorer project! If you have suggestions for improvements or bug fixes, please follow our contribution guidelines:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Commit your changes with clear, descriptive messages.
+4. Push your branch and submit a pull request.
+
+Please ensure your code adheres to the project's coding standards and include any relevant tests.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

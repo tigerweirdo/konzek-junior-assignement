@@ -25,7 +25,6 @@ const CountriesList: React.FC<FilterGroupProps> = ({ filter, groupBy }) => {
           } else if (groupBy === 'language') {
             country.languages.forEach(lang => keys.push(lang.name));
           } else if (groupBy === 'currency') {
-            // currency değerini dikkate alacak şekilde gruplandırma yap
             keys.push(country.currency);
           }
   
@@ -37,7 +36,6 @@ const CountriesList: React.FC<FilterGroupProps> = ({ filter, groupBy }) => {
         }, {});
   
         setGroupedCountries(groups);
-        // Tüm grup isimlerini activeKeys olarak ayarla
         setActiveKeys(Object.keys(groups));
       } else {
         setGroupedCountries({ 'All': processedCountries });
@@ -53,7 +51,6 @@ const CountriesList: React.FC<FilterGroupProps> = ({ filter, groupBy }) => {
     }
   }, [groupedCountries]);
   useEffect(() => {
-    // 'All' durumunda tüm ülkeleri göster
     if (groupedCountries['All']) {
       setActiveKeys(['All']);
     }
@@ -84,7 +81,6 @@ const CountriesList: React.FC<FilterGroupProps> = ({ filter, groupBy }) => {
                   }}
                   onClick={() => setSelectedCountryName(country.name)}
                 >
-                  {/* Ülke ismi ve emoji'yi göster */}
                   <div style={{ textAlign: 'center' }}>
                     {country.name} {country.emoji}
                   </div>

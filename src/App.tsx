@@ -1,4 +1,3 @@
-// App.js
 import React, { useState } from 'react';
 import { Layout, Typography, Space } from 'antd';
 import SearchFilter from './components/SearchFilter';

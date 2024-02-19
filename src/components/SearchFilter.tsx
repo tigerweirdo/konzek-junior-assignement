@@ -31,7 +31,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({ onFilterChange, onGroupByCh
   <Option value="">None</Option>
   <Option value="continent">Continent</Option>
   <Option value="language">Language</Option>
-  <Option value="currency">Currency</Option> {/* Yeni gruplandırma seçeneği */}
+  <Option value="currency">Currency</Option> 
 </Select>
             <Button
                 type="primary"
