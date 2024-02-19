@@ -5,6 +5,18 @@ export const GET_COUNTRIES = gql`
     countries {
       code
       name
+      continent {
+        name
+      }
+      languages {
+        name
+      }
+    currency
+    phone
+    states {
+      name
     }
+    emoji
+  }
   }
 `;
